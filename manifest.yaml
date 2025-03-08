@@ -1,0 +1,41 @@
+version: 0.0.1
+type: plugin
+author: teddylee777
+name: deepl-translator
+label:
+  en_US: DeepL Translator
+  ko_KR: DeepL 번역기
+  ja_JP: DeepL 翻訳
+  zh_Hans: DeepL 翻译
+  pt_BR: Tradutor DeepL
+description:
+  en_US: Advanced translator using DeepL API to translate between 30+ languages with support for various language pairs
+  ko_KR: DeepL API를 사용하여 30개 이상의 언어 간 번역을 지원하는 고급 번역 도구
+  ja_JP: DeepL APIを使用して、30以上の言語間の翻訳をサポートする高度な翻訳ツール
+  zh_Hans: 使用DeepL API支持30多种语言之间互译的高级翻译工具
+  pt_BR: Ferramenta de tradução avançada usando a API DeepL para traduzir entre mais de 30 idiomas com suporte para vários pares de idiomas
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+plugins:
+  tools:
+    - provider/deepl-translator.yaml
+meta:
+  version: 0.1.0
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-03-06T14:48:54.83967+09:00
+privacy: PRIVACY.md
+verified: false

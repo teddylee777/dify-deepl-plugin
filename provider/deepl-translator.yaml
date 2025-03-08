@@ -1,0 +1,31 @@
+identity:
+  name: deepl-translator
+  author: teddylee777
+  label:
+    en_US: DeepL Translator
+    zh_Hans: DeepL 翻译
+    ko_KR: DeepL 번역기
+  description:
+    en_US: Advanced multi-language translator using DeepL API
+    zh_Hans: 使用DeepL API支持30多种语言之间互译的高级翻译工具
+    ko_KR: DeepL API를 사용한 고급 다국어 번역기
+  icon: icon.svg
+credentials_for_provider:
+  deepl_api_key:
+    type: secret-input
+    help:
+      en_US: Get your DeepL API key from DeepL
+      ko_KR: DeepL에서 당신의 DeepL API 키를 얻으세요
+    label:
+      en_US: DeepL API Key
+      ko_KR: DeepL API 키
+    placeholder:
+      en_US: Enter your DeepL API Key
+      ko_KR: DeepL API 키를 입력하세요
+    required: true
+    url: https://www.deepl.com/
+tools:
+  - tools/deepl-translator.yaml
+extra:
+  python:
+    source: provider/deepl-translator.py
