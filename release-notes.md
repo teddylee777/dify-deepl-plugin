@@ -1,6 +1,12 @@
-# DeepL Translator Plugin for Dify
+# DeepL Translator Plugin for Dify v0.1.1
 
-Initial release of the DeepL Translator Plugin.
+Version 0.1.1 release of the DeepL Translator Plugin.
+
+## Changes in v0.1.1
+- Updated plugin icon to official DeepL logo
+- Updated all comments from Korean to English
+- Fixed minor bugs and improved stability
+- Added proper packaging with both .zip and .difypkg formats
 
 ## Features
 - Translate text between multiple languages
