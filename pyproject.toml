@@ -1,0 +1,12 @@
+[project]
+name = "deepl-translator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp>=3.10.5",
+    "deepl>=1.21.0",
+    "dify-plugin>=0.0.1b70",
+    "nest-asyncio>=1.6.0",
+]

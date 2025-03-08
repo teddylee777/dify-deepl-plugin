@@ -1,4 +1,4 @@
-version: 0.0.1
+version: 0.1.1
 type: plugin
 author: teddylee777
 name: deepl-translator
@@ -28,7 +28,7 @@ plugins:
   tools:
     - provider/deepl-translator.yaml
 meta:
-  version: 0.1.0
+  version: 0.1.1
   arch:
     - amd64
     - arm64

@@ -1,0 +1,317 @@
+identity:
+  name: deepl-translator
+  author: teddylee777
+  label:
+    en_US: DeepL Translator
+    ko_KR: DeepL 번역기
+  icon: icon.svg
+description:
+  human:
+    en_US: advanced translator tool to translate any language to Korean
+    ko_KR: 모든 언어를 한국어로 번역하는 고급 번역 도구
+  llm: Advanced translator using deepl api. It can translate between multiple languages.
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      ko_KR: 쿼리 문자열
+    human_description:
+      en_US: The text to translate
+      ko_KR: 번역할 텍스트
+    llm_description: The text to translate. This is the input text that will be translated by the DeepL API.
+    form: llm
+  - name: target_lang
+    type: select
+    required: false
+    default: KO
+    label:
+      en_US: Target Language
+      ko_KR: 목표 언어
+    human_description:
+      en_US: Target language for translation
+      ko_KR: 번역 목표 언어
+    options:
+      - label:
+          en_US: Arabic
+          ko_KR: 아랍어
+        value: AR
+      - label:
+          en_US: Bulgarian
+          ko_KR: 불가리아어
+        value: BG
+      - label:
+          en_US: Czech
+          ko_KR: 체코어
+        value: CS
+      - label:
+          en_US: Danish
+          ko_KR: 덴마크어
+        value: DA
+      - label:
+          en_US: German
+          ko_KR: 독일어
+        value: DE
+      - label:
+          en_US: Greek
+          ko_KR: 그리스어
+        value: EL
+      - label:
+          en_US: English (British)
+          ko_KR: 영어 (영국)
+        value: EN-GB
+      - label:
+          en_US: English (American)
+          ko_KR: 영어 (미국)
+        value: EN-US
+      - label:
+          en_US: Spanish
+          ko_KR: 스페인어
+        value: ES
+      - label:
+          en_US: Estonian
+          ko_KR: 에스토니아어
+        value: ET
+      - label:
+          en_US: Finnish
+          ko_KR: 핀란드어
+        value: FI
+      - label:
+          en_US: French
+          ko_KR: 프랑스어
+        value: FR
+      - label:
+          en_US: Hungarian
+          ko_KR: 헝가리어
+        value: HU
+      - label:
+          en_US: Indonesian
+          ko_KR: 인도네시아어
+        value: ID
+      - label:
+          en_US: Italian
+          ko_KR: 이탈리아어
+        value: IT
+      - label:
+          en_US: Japanese
+          ko_KR: 일본어
+        value: JA
+      - label:
+          en_US: Korean
+          ko_KR: 한국어
+        value: KO
+      - label:
+          en_US: Lithuanian
+          ko_KR: 리투아니아어
+        value: LT
+      - label:
+          en_US: Latvian
+          ko_KR: 라트비아어
+        value: LV
+      - label:
+          en_US: Norwegian (Bokmål)
+          ko_KR: 노르웨이어 (보크몰)
+        value: NB
+      - label:
+          en_US: Dutch
+          ko_KR: 네덜란드어
+        value: NL
+      - label:
+          en_US: Polish
+          ko_KR: 폴란드어
+        value: PL
+      - label:
+          en_US: Portuguese (Brazilian)
+          ko_KR: 포르투갈어 (브라질)
+        value: PT-BR
+      - label:
+          en_US: Portuguese (European)
+          ko_KR: 포르투갈어 (유럽)
+        value: PT-PT
+      - label:
+          en_US: Romanian
+          ko_KR: 루마니아어
+        value: RO
+      - label:
+          en_US: Russian
+          ko_KR: 러시아어
+        value: RU
+      - label:
+          en_US: Slovak
+          ko_KR: 슬로바키아어
+        value: SK
+      - label:
+          en_US: Slovenian
+          ko_KR: 슬로베니아어
+        value: SL
+      - label:
+          en_US: Swedish
+          ko_KR: 스웨덴어
+        value: SV
+      - label:
+          en_US: Turkish
+          ko_KR: 터키어
+        value: TR
+      - label:
+          en_US: Ukrainian
+          ko_KR: 우크라이나어
+        value: UK
+      - label:
+          en_US: Chinese (Simplified)
+          ko_KR: 중국어 (간체)
+        value: ZH-HANS
+      - label:
+          en_US: Chinese (Traditional)
+          ko_KR: 중국어 (번체)
+        value: ZH-HANT
+    llm_description: Target language code for translation. Comprehensive list of languages supported by DeepL API.
+    form: form
+  - name: source_lang
+    type: select
+    required: false
+    default: EN
+    label:
+      en_US: Source Language
+      ko_KR: 원본 언어
+    human_description:
+      en_US: Source language (default is auto-detection)
+      ko_KR: 원본 언어 (기본값은 자동 감지)
+    options:
+      - label:
+          en_US: Arabic
+          ko_KR: 아랍어
+        value: AR
+      - label:
+          en_US: Bulgarian
+          ko_KR: 불가리아어
+        value: BG
+      - label:
+          en_US: Czech
+          ko_KR: 체코어
+        value: CS
+      - label:
+          en_US: Danish
+          ko_KR: 덴마크어
+        value: DA
+      - label:
+          en_US: German
+          ko_KR: 독일어
+        value: DE
+      - label:
+          en_US: Greek
+          ko_KR: 그리스어
+        value: EL
+      - label:
+          en_US: English
+          ko_KR: 영어
+        value: EN
+      - label:
+          en_US: Spanish
+          ko_KR: 스페인어
+        value: ES
+      - label:
+          en_US: Estonian
+          ko_KR: 에스토니아어
+        value: ET
+      - label:
+          en_US: Finnish
+          ko_KR: 핀란드어
+        value: FI
+      - label:
+          en_US: French
+          ko_KR: 프랑스어
+        value: FR
+      - label:
+          en_US: Hungarian
+          ko_KR: 헝가리어
+        value: HU
+      - label:
+          en_US: Indonesian
+          ko_KR: 인도네시아어
+        value: ID
+      - label:
+          en_US: Italian
+          ko_KR: 이탈리아어
+        value: IT
+      - label:
+          en_US: Japanese
+          ko_KR: 일본어
+        value: JA
+      - label:
+          en_US: Korean
+          ko_KR: 한국어
+        value: KO
+      - label:
+          en_US: Lithuanian
+          ko_KR: 리투아니아어
+        value: LT
+      - label:
+          en_US: Latvian
+          ko_KR: 라트비아어
+        value: LV
+      - label:
+          en_US: Norwegian (Bokmål)
+          ko_KR: 노르웨이어 (보크몰)
+        value: NB
+      - label:
+          en_US: Dutch
+          ko_KR: 네덜란드어
+        value: NL
+      - label:
+          en_US: Polish
+          ko_KR: 폴란드어
+        value: PL
+      - label:
+          en_US: Portuguese
+          ko_KR: 포르투갈어
+        value: PT
+      - label:
+          en_US: Romanian
+          ko_KR: 루마니아어
+        value: RO
+      - label:
+          en_US: Russian
+          ko_KR: 러시아어
+        value: RU
+      - label:
+          en_US: Slovak
+          ko_KR: 슬로바키아어
+        value: SK
+      - label:
+          en_US: Slovenian
+          ko_KR: 슬로베니아어
+        value: SL
+      - label:
+          en_US: Swedish
+          ko_KR: 스웨덴어
+        value: SV
+      - label:
+          en_US: Turkish
+          ko_KR: 터키어
+        value: TR
+      - label:
+          en_US: Ukrainian
+          ko_KR: 우크라이나어
+        value: UK
+      - label:
+          en_US: Chinese
+          ko_KR: 중국어
+        value: ZH
+    llm_description: Source language code. If not specified, DeepL will auto-detect the source language. Comprehensive list of languages supported by DeepL API.
+    form: form
+  - name: use_cache
+    type: boolean
+    required: false
+    default: true
+    label:
+      en_US: Use Cache
+      ko_KR: 캐시 사용
+    human_description:
+      en_US: Whether to use caching for processed translations
+      ko_KR: 처리된 번역에 대한 캐싱 사용 여부
+    llm_description: Whether to use caching for processed translations (can improve performance for repeated requests)
+    form: form
+extra:
+  python:
+    source: tools/deepl-translator.py

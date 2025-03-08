@@ -15,14 +15,14 @@ charset-normalizer==3.4.1
     # via requests
 click==8.1.8
     # via flask
-deepl>=1.15.0
+deepl==1.21.0
     # via deepl-translator (pyproject.toml)
 dify-plugin==0.0.1b71
-aiohttp>=3.8.0
+aiohttp==3.9.3
     # for async HTTP requests
 nest-asyncio==1.6.0
     # for nested event loops
-pydantic>=2.0.0
+pydantic==2.7.1
     # for data validation
 dpkt==1.9.8
     # via dify-plugin
