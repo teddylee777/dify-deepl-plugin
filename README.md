@@ -13,7 +13,7 @@ A plugin for the Dify platform that provides text translation capabilities using
 
 1. Visit your Dify platform's plugin management page
 2. Select "Install from GitHub"
-3. Enter the repository URL: `https://github.com/your-username/dify-deepl-plugin`
+3. Enter the repository URL: `https://github.com/teddylee777/dify-deepl-plugin`
 4. Select the latest version
 5. Click "Install"
 
@@ -68,7 +68,7 @@ For information about how this plugin handles data, please see the [Privacy Poli
 
 ## Contact
 
-For questions, issues, or contributions, please [open an issue](https://github.com/your-username/dify-deepl-plugin/issues) on the GitHub repository.
+For questions, issues, or contributions, please [open an issue](https://github.com/teddylee777/dify-deepl-plugin/issues) on the GitHub repository.
 
 ---
 
